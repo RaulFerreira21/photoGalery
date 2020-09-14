@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +128,6 @@
   },
   "defaultProject": "proj-galery",
   "cli": {
-    "analytics": "81739239-859c-46d3-8728-42b209eda681"
+    "analytics": "5c88daa6-578e-43b0-a641-3dc1120bea29"
   }
 }
