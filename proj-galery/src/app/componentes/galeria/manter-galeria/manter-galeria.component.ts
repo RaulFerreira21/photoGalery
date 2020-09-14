@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { GaleriaService } from '../../../servicos/galeria/galeria.service';
+
 @Component({
   selector: 'app-manter-galeria',
   templateUrl: './manter-galeria.component.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManterGaleriaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private galeriaService: GaleriaService) { }
 
   ngOnInit(): void {
+    this.galeriaService.getTodos().subscribe(resp => {
+      console.log('Resposta', resp);
+    });
   }
 
 }
